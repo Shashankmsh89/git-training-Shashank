@@ -61,3 +61,25 @@ footer {
 footer a {
   color: #0052cc;
 }
+
+.sidebar {
+  background: #ffffff;
+  border: 1px solid #e1e4eb;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.sidebar ul {
+  padding: 0;
+  list-style: none;
+}
+.sidebar li {
+  margin: 0.5rem 0;
+}
+.sidebar a {
+  color: #0052cc;
+  text-decoration: none;
+}
+.sidebar a:hover {
+  text-decoration: underline;
+}
