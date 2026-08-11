@@ -1,0 +1,14 @@
+# IDE
+.vs/
+.vscode/
+.idea/
+
+# Build
+bin/
+obj/
+node_modules/
+dist/
+
+# OS
+.DS_Store
+Thumbs.db
