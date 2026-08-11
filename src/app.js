@@ -3,3 +3,5 @@ document.addEventListener('DOMContentLoaded', () => {
   message.textContent = 'App initialized successfully.';
   document.querySelector('main section').appendChild(message);
 });
+
+// WIP: feature placeholder
