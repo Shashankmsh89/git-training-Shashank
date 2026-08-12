@@ -1,0 +1,20 @@
+#!/usr/bin/env sh
+
+# Enforce a conventional commit message pattern locally.
+msg_file="$1"
+pattern='^(feat|fix|docs|chore|style|refactor|test): .+'
+
+if [ -z "$msg_file" ]; then
+  echo "ERROR: commit message file is required." >&2
+  exit 1
+fi
+
+message=$(tr -d '\r' < "$msg_file")
+
+if ! printf '%s\n' "$message" | grep -Eq "$pattern"; then
+  echo "ERROR: commit message must match '<type>: <subject>' using a valid conventional type." >&2
+  echo "Example: feat: add user login" >&2
+  exit 1
+fi
+
+exit 0
